@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT">
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="类脑芯片相关的知识：类脑变换可以类比于人工智能芯片。主流的AI芯片包括GPU、PGA、ASIC 传统的计算芯片是冯诺依曼结构，类脑芯片可以模仿生物大脑的神经元突触，进行低耗的海量运算。 IBM、英特尔、高通等公司都推出过他们的类脑芯片计划以及相应的试验品。 中国在2015年开始将脑科学列入十三五规划重大科技项目。也有一些团队在做这些东西。 清华大学微电子 钱鹤、吴华强做出过比较重大的贡献 问题：现">
+<meta property="og:type" content="article">
+<meta property="og:title" content="感兴趣方向调研">
+<meta property="og:url" content="http://yoursite.com/2019/08/16/感兴趣方向调研/index.html">
+<meta property="og:site_name" content="QINQI&#39;S BLOG">
+<meta property="og:description" content="类脑芯片相关的知识：类脑变换可以类比于人工智能芯片。主流的AI芯片包括GPU、PGA、ASIC 传统的计算芯片是冯诺依曼结构，类脑芯片可以模仿生物大脑的神经元突触，进行低耗的海量运算。 IBM、英特尔、高通等公司都推出过他们的类脑芯片计划以及相应的试验品。 中国在2015年开始将脑科学列入十三五规划重大科技项目。也有一些团队在做这些东西。 清华大学微电子 钱鹤、吴华强做出过比较重大的贡献 问题：现">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/15282341-47881ad9b8611c96.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/15282341-17083df10bf9fd8a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/15282341-2a6c37ff3b76f10e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/15282341-9f7c4d441caf2beb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/15282341-647737d1ef4c7af8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:updated_time" content="2019-08-16T11:05:34.949Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="感兴趣方向调研">
+<meta name="twitter:description" content="类脑芯片相关的知识：类脑变换可以类比于人工智能芯片。主流的AI芯片包括GPU、PGA、ASIC 传统的计算芯片是冯诺依曼结构，类脑芯片可以模仿生物大脑的神经元突触，进行低耗的海量运算。 IBM、英特尔、高通等公司都推出过他们的类脑芯片计划以及相应的试验品。 中国在2015年开始将脑科学列入十三五规划重大科技项目。也有一些团队在做这些东西。 清华大学微电子 钱鹤、吴华强做出过比较重大的贡献 问题：现">
+<meta name="twitter:image" content="https://upload-images.jianshu.io/upload_images/15282341-47881ad9b8611c96.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2019/08/16/感兴趣方向调研/">
+
+
+
+
+
+  <title>感兴趣方向调研 | QINQI'S BLOG</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">QINQI'S BLOG</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/16/感兴趣方向调研/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="QINQI">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="QINQI'S BLOG">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">感兴趣方向调研</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-08-16T19:00:14+08:00">
+                2019-08-16
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/科研/" itemprop="url" rel="index">
+                    <span itemprop="name">科研</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  1.9k
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  6
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="类脑芯片相关的知识："><a href="#类脑芯片相关的知识：" class="headerlink" title="类脑芯片相关的知识："></a>类脑芯片相关的知识：</h1><p>类脑变换可以类比于人工智能芯片。主流的AI芯片包括GPU、PGA、ASIC</p>
+<p>传统的计算芯片是冯诺依曼结构，类脑芯片可以模仿生物大脑的神经元突触，进行低耗的海量运算。</p>
+<p>IBM、英特尔、高通等公司都推出过他们的类脑芯片计划以及相应的试验品。</p>
+<p>中国在2015年开始将脑科学列入十三五规划重大科技项目。也有一些团队在做这些东西。</p>
+<p><strong>清华大学微电子 钱鹤、吴华强</strong>做出过比较重大的贡献</p>
+<p>问题：现在智能水平很低；降低制造难度，增强通用性；降低功耗，可以探索超低功耗材料以及计算结构</p>
+<p>类脑芯片现在更多的是涉及结构优化</p>
+<p><strong>中科院计算所（承担类脑计算芯片研究）、中科院半导体所（承担类脑计算芯片研究）</strong></p>
+<h1 id="关于光电子器件的相关问题？"><a href="#关于光电子器件的相关问题？" class="headerlink" title="关于光电子器件的相关问题？"></a>关于光电子器件的相关问题？</h1><p>以 III 族氮化物和碳化硅 (SiC) 为代表的宽禁带半导体也成为近年来国内外重点研究和发展的新型第 3 代半导体材料. 研发宽禁带半导体光电子器件被公认是占领光电信息技术领域的战略制高点, 各国政府和企业均投入巨额的经费进行开发. 紫外光电探测器及其相关技术在国防科技、引擎工作监测、深空探索研究、紫外天文学、环境监测、火灾探测与报警、可燃烧气体成分的监测分析以及临床细胞癌变检测等方面有着广阔的前景, 具有较高的民用和军事价值.</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/15282341-47881ad9b8611c96.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="img"></p>
+<p>更多的涉及的是系统问题而不是单个的器件研究问题了</p>
+<p>现在的发展从材料、集成技术以及系统应用都需要开发。新的材料像是二维原子晶体以及拓扑绝缘体等等新材料是比较关注的点。</p>
+<p><strong>宽禁带半导体紫外探测器：</strong>常规的已经趋于成熟</p>
+<p><strong>半导体照明：</strong>显然已经产业化，中国在追赶，非常像现在的存储器领域</p>
+<p><strong>量子器件：</strong>国际上的前沿热点是研究基于 III-V 族及 III 族氮化物半导体量子点结构的单光子光源, 同时还携带自旋或偏振特性.</p>
+<p>激光器是一个难以解决的应用点？？</p>
+<p>宽禁带半导体的集成电路仍在发展当中，<strong>其集成是必然之势。其在不完全放弃硅工艺的基础上开发新工艺新方法完成宽禁带半导体上的集成电路生产制造是必然趋势</strong>。</p>
+<h1 id="4-21"><a href="#4-21" class="headerlink" title="4.21"></a>4.21</h1><h2 id="物理电子学："><a href="#物理电子学：" class="headerlink" title="物理电子学："></a>物理电子学：</h2><p><img src="https://upload-images.jianshu.io/upload_images/15282341-17083df10bf9fd8a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="img"></p>
+<p>只是一个学科的名字，并没有什么大不了的事情</p>
+<h1 id="4月23日"><a href="#4月23日" class="headerlink" title="4月23日"></a><strong>4月23日</strong></h1><h2 id="基于纳米材料的太阳能电池"><a href="#基于纳米材料的太阳能电池" class="headerlink" title="基于纳米材料的太阳能电池"></a>基于纳米材料的太阳能电池</h2><p>从搜索的结果来看，这个领域现在并不是一个热点问题，像是在许多年前曾经火过。我现在也不是很了解，查不到很多的资料现在先暂时的待定。</p>
+<h2 id><a href="#" class="headerlink" title=" "></a> </h2><h2 id="硅基光子器件"><a href="#硅基光子器件" class="headerlink" title="硅基光子器件"></a>硅基光子器件</h2><p>当下研究的热点问题</p>
+<p>硅基光子芯片现在来看主要用于数据通信，另外还有信息处理</p>
+<p>最具前景的还是传感器，包括生物传感，成像，信号处理，光探测和测距（LIDAR）等</p>
+<p>如果能够充分利用二维材料等优质的表面性质的话，会对硅基光子传感器性能的提升带来很大的优势。</p>
+<p>这个问题其实就是光电融合的一个方向</p>
+<p>SOI，就是硅上绝缘体</p>
+<p>其更多的是光互联，更强调数据通信</p>
+<p>硅基光电子包括硅基光子材料、硅基光子器件、硅基光子集成三个主要方面。其中硅基光子器件，是指以硅半导体材料技术制作的各种光有源及无源器件，包括硅基发光二极管、硅基激光器、硅基光探测器、硅基光调制器、平面波导、光栅耦合器等</p>
+<p>已经是产业化了，即将大规模地产业化</p>
+<h2 id="-1"><a href="#-1" class="headerlink" title=" "></a> </h2><h2 id="MEMS相关"><a href="#MEMS相关" class="headerlink" title="MEMS相关"></a>MEMS相关</h2><p>micro-electro-mechanical system.是利用集成电路制造技术和微加工技术把微结构、微传感器、控制处理电路甚至接口、通信和电源等制造在一块或多块芯片上的微型集成系统。MEMS可以革命性地影响几乎所有类别的产品。它用微加工技术将各种产品整合到基于硅的微电子芯片上，做到systems-on-a-chip。</p>
+<p>就是一种工艺，可以制造一些传感器等等，用于汽车电子领域、计算机领域、消费电子领域、网络通信类、医疗电子领域等</p>
+<h1 id="4月24日"><a href="#4月24日" class="headerlink" title="4月24日"></a>4月24日</h1><p>the present state-of-the-art   当前最先进的技术</p>
+<h2 id="真空纳米电子学"><a href="#真空纳米电子学" class="headerlink" title="真空纳米电子学"></a>真空纳米电子学</h2><p><img src="https://upload-images.jianshu.io/upload_images/15282341-2a6c37ff3b76f10e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="img"></p>
+<p>FN隧穿的解释</p>
+<p>这个学科也是一个很老的学科，在网上搜的结果就显示最晚的也在近10年前了</p>
+<h2 id="低功耗Soc设计-："><a href="#低功耗Soc设计-：" class="headerlink" title="低功耗Soc设计 ："></a>低功耗Soc设计 ：</h2><p>这个是涉及芯片设计的部分了</p>
+<p>功耗分为静态功耗和动态功耗。静态功耗是由漏电流造成的，而动态功耗是由信号反转时对芯片中的寄生RC的充放电引起的。</p>
+<p>属于硬件的设计，不是很感兴趣。因为尝试过了单片机的一些东西，只是感觉逻辑上很不清晰，工程上不知所云。没有一次很成功的经验，导致我对其不是特别的感兴趣。</p>
+<p><a href="https://zhuanlan.zhihu.com/p/47483274" target="_blank" rel="noopener">SOC低功耗设计</a></p>
+<h2 id="VLSI-very-large-scale-intergration-："><a href="#VLSI-very-large-scale-intergration-：" class="headerlink" title="VLSI (very large scale intergration) ："></a>VLSI (very large scale intergration) ：</h2><p><img src="https://upload-images.jianshu.io/upload_images/15282341-9f7c4d441caf2beb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="img"></p>
+<h2 id="自旋电子学"><a href="#自旋电子学" class="headerlink" title="自旋电子学"></a>自旋电子学</h2><p>自旋电子学是最有希望在5纳米以下技术节点取代传统半导体晶体管的技术</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/15282341-647737d1ef4c7af8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="img"></p>
+<p>塞贝克效应就是温差产生电流</p>
+<p>帕帖尔效应：电流通过不同金属的节点的时候，会有吸放热现象</p>
+<p><a href="http://www.casted.org.cn/channel/newsinfo/6642" target="_blank" rel="noopener">自旋电子学的现状与趋势，这是一篇比较全面阐述自旋电子学现状的文章</a></p>
+<p>电子有两个属性：电荷以及自旋，随着摩尔定律的推进，单个器件尺寸不断地微缩，引发量子效应以及高能问题。于是人们开始考虑自旋这个属性。</p>
+<p>目前的自旋电子学主要集中在金属磁性材料当中，属于磁电子学。magnetic tunnel junction MTJ 磁隧道结    隧道磁电阻tunneling magnetetoresistance TMR 。</p>
+<p>第二类自旋电子器件主要研究半导体材料，通过制造系统中的自旋数目的不平衡来实现自旋晶体管和自旋阀。代替传统半导体器件。其特点是能耗低开关速度快。</p>
+<p>第三类自旋电子学器件区别于其他两种是因为它试图通过对单个或者少数几个电子自旋量子态的操控来实现量子计算和量子通信。</p>
+<h2 id="人工智能芯片的设计："><a href="#人工智能芯片的设计：" class="headerlink" title="人工智能芯片的设计："></a>人工智能芯片的设计：</h2><p><a href="http://www.sohu.com/a/155968615_609521" target="_blank" rel="noopener">芯片设计制造的整个流程</a></p>
+<p><a href="https://www.eefocus.com/mcu-dsp/m/413365" target="_blank" rel="noopener">芯片设计流程</a></p>
+<h2 id="柔性电子学："><a href="#柔性电子学：" class="headerlink" title="柔性电子学："></a>柔性电子学：</h2><p><a href="http://www.cailiaoniu.com/143988.html" target="_blank" rel="noopener">柔性电子的十二篇综述</a></p>
+<p><a href="http://www.cailiaoniu.com/136630.html" target="_blank" rel="noopener">全球柔性可穿戴电子研究团队及其研究进展</a></p>
+<p><a href="http://www.cailiaoniu.com/161108.html" target="_blank" rel="noopener">柔性电子学综述</a></p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/08/16/守望/" rel="next" title="守望">
+                <i class="fa fa-chevron-left"></i> 守望
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/avatar.jpg" alt="QINQI">
+            
+              <p class="site-author-name" itemprop="name">QINQI</p>
+              <p class="site-description motion-element" itemprop="description">静静的走</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#类脑芯片相关的知识："><span class="nav-number">1.</span> <span class="nav-text">类脑芯片相关的知识：</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#关于光电子器件的相关问题？"><span class="nav-number">2.</span> <span class="nav-text">关于光电子器件的相关问题？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4-21"><span class="nav-number">3.</span> <span class="nav-text">4.21</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#物理电子学："><span class="nav-number">3.1.</span> <span class="nav-text">物理电子学：</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4月23日"><span class="nav-number">4.</span> <span class="nav-text">4月23日</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#基于纳米材料的太阳能电池"><span class="nav-number">4.1.</span> <span class="nav-text">基于纳米材料的太阳能电池</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#null"><span class="nav-number">4.2.</span> <span class="nav-text"> </span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#硅基光子器件"><span class="nav-number">4.3.</span> <span class="nav-text">硅基光子器件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#-1"><span class="nav-number">4.4.</span> <span class="nav-text"> </span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#MEMS相关"><span class="nav-number">4.5.</span> <span class="nav-text">MEMS相关</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4月24日"><span class="nav-number">5.</span> <span class="nav-text">4月24日</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#真空纳米电子学"><span class="nav-number">5.1.</span> <span class="nav-text">真空纳米电子学</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#低功耗Soc设计-："><span class="nav-number">5.2.</span> <span class="nav-text">低功耗Soc设计 ：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#VLSI-very-large-scale-intergration-："><span class="nav-number">5.3.</span> <span class="nav-text">VLSI (very large scale intergration) ：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#自旋电子学"><span class="nav-number">5.4.</span> <span class="nav-text">自旋电子学</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#人工智能芯片的设计："><span class="nav-number">5.5.</span> <span class="nav-text">人工智能芯片的设计：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#柔性电子学："><span class="nav-number">5.6.</span> <span class="nav-text">柔性电子学：</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">QINQI</span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">Site words total count&#58;</span>
+    
+    <span title="Site words total count">5.8k</span>
+  
+</div>
+
+
+  <div class="powered-by">
+  <i class="fa fa-user-md"></i><span id="busuanzi_container_site_uv">
+    本站访客数:<span id="busuanzi_value_site_uv"></span>
+  </span>
+  </div>
+
+  <!-- <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+-->
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <!-- <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+-->
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

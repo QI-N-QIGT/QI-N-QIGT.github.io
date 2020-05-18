@@ -79,18 +79,28 @@
 
 
 
-<meta name="description" content="静静的走">
+<meta name="description" content="As far as I know, the training approaches of RRAM crossbar based NN are divided into two types. One of them is called ex-situ, or off line training. This method is very simple. You just need train the">
 <meta name="keywords" content="RRAMAlgorithm">
 <meta property="og:type" content="article">
-<meta property="og:title" content="20200517_paperResearch">
+<meta property="og:title" content="20200517_paperResearch about the implementation of in-situ training">
 <meta property="og:url" content="http://yoursite.com/2020/05/17/20200517-paperResearch/index.html">
 <meta property="og:site_name" content="QINQI&#39;S BLOG">
-<meta property="og:description" content="静静的走">
+<meta property="og:description" content="As far as I know, the training approaches of RRAM crossbar based NN are divided into two types. One of them is called ex-situ, or off line training. This method is very simple. You just need train the">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2020-05-17T15:44:39.920Z">
+<meta property="og:image" content="http://yoursite.com/2020/05/17/20200517-paperResearch/C:%5CUsers%5CDell%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1589809406135.png">
+<meta property="og:image" content="http://yoursite.com/2020/05/17/20200517-paperResearch/C:%5CUsers%5CDell%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1589810599431.png">
+<meta property="og:image" content="http://yoursite.com/2020/05/17/20200517-paperResearch/C:%5CUsers%5CDell%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1589811354164.png">
+<meta property="og:image" content="http://yoursite.com/2020/05/17/20200517-paperResearch/C:%5CUsers%5CDell%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1589812063129.png">
+<meta property="og:image" content="http://yoursite.com/2020/05/17/20200517-paperResearch/C:%5CUsers%5CDell%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1589812077361.png">
+<meta property="og:image" content="http://yoursite.com/2020/05/17/20200517-paperResearch/C:%5CUsers%5CDell%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1589812557563.png">
+<meta property="og:image" content="http://yoursite.com/2020/05/17/20200517-paperResearch/C:%5CUsers%5CDell%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1589812573580.png">
+<meta property="og:image" content="http://yoursite.com/2020/05/17/20200517-paperResearch/C:%5CUsers%5CDell%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1589812659931.png">
+<meta property="og:image" content="http://yoursite.com/2020/05/17/20200517-paperResearch/C:%5CUsers%5CDell%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1589813221751.png">
+<meta property="og:updated_time" content="2020-05-18T15:23:29.377Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="20200517_paperResearch">
-<meta name="twitter:description" content="静静的走">
+<meta name="twitter:title" content="20200517_paperResearch about the implementation of in-situ training">
+<meta name="twitter:description" content="As far as I know, the training approaches of RRAM crossbar based NN are divided into two types. One of them is called ex-situ, or off line training. This method is very simple. You just need train the">
+<meta name="twitter:image" content="http://yoursite.com/2020/05/17/20200517-paperResearch/C:%5CUsers%5CDell%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1589809406135.png">
 
 
 
@@ -126,7 +136,7 @@
 
 
 
-  <title>20200517_paperResearch | QINQI'S BLOG</title>
+  <title>20200517_paperResearch about the implementation of in-situ training | QINQI'S BLOG</title>
   
 
 
@@ -260,7 +270,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">20200517_paperResearch</h1>
+          <h1 class="post-title" itemprop="name headline">20200517_paperResearch about the implementation of in-situ training</h1>
         
 
         <div class="post-meta">
@@ -326,7 +336,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  0
+                  884
                 </span>
               
 
@@ -342,7 +352,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  1
+                  5
                 </span>
               
             </div>
@@ -363,7 +373,33 @@
       
 
       
-        
+        <p>As far as I know, the training approaches of RRAM crossbar based NN are divided into two types. One of them is called <strong>ex-situ</strong>, or <strong>off line training</strong>. This method is very simple. You just need train the NN by software and acquire the weight matrix and then map them into RRAM crossbar array. The cons and pros of ex-situ are obviously. About the cons, this way can not eliminate the negative influence of non-ideal factors for devices and array, like variation, stuck-at-fault, non-linear and line resistance. Therefore, the accuracy of RRAM crossbar based NN system will have a loss. And the pros are that it’s unnecessary to add external circuit. As a result, the energy efficiency will be improved, while the area of chip will drop. The other training approach is called <strong>in-situ</strong>, or <strong>online training</strong>. This method is several more complicated than ex-situ and I still don’t find out the whole process of it.  However, I have read some related papers and understand more about it. The pros and cons of in-situ training approach are opposite to the ex-situ one and I will not say these stuff again.</p>
+<p>OK, the next section I will share some papers that I read in the last few days. Of course, the following viewpoints come from my understandings about these papers and I will give all the references.</p>
+<p>You know, I just want to figure out how the in-situ training work on RRAM array.  [1] is a paper about architecture. It proposes their own data flow but not the details of in-situ training.  The following figure is the main idea of this paper.</p>
+<p><img src="/2020/05/17/20200517-paperResearch/C:%5CUsers%5CDell%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1589809406135.png" alt="1589809406135"></p>
+<p>It’s obviously that I don’t get the answer I want in this paper. Luckily, I found the conference paper from IPFA 2019 written by Yuyi Liu [2].To be honest, I didn’t read this paper carefully. However, this reference mentions that <strong>Manhattan rule</strong> is used in the process of in-situ training. Therefore, I began to search</p>
+<p>the key word, <strong>Manhattan rule</strong>, and wanted to find out something. Quickly, I found several papers which mentioned the in-situ training in detail. </p>
+<p>[3] proposes the combination of <strong>“dropout”</strong> and *<em>“Manhattan Rule” *</em>training algorithms for memristive crossbar NN to reduce circuit area overhead of in-situ training.</p>
+<p><img src="/2020/05/17/20200517-paperResearch/C:%5CUsers%5CDell%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1589810599431.png" alt="1589810599431"></p>
+<p>The Fig.1.a above shows what the <strong>dropout</strong> is. I believe that it’s a  conception from <em>Computer Science</em> and they find through this trick the additional circuit overhead for in-situ training will just drop. The idea is very easy to understand logically. The dropout of some neurons will decrease the number of weights that are needed to update.</p>
+<p>Also, the <strong>Manhattan rule</strong> is shown in the following equation.</p>
+<p><img src="/2020/05/17/20200517-paperResearch/C:%5CUsers%5CDell%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1589811354164.png" alt="1589811354164"></p>
+<p>It’s a very  crude version of BP because it just considers the sign of <strong>delta W</strong>, which is also the reason why it can decrease the complexity of additional circuit. However, this paper is just a application of Manhattan rule and I want original paper. </p>
+<p>Fortunately, I find this paper finally [4]. The following Fig shows that applied  voltage pulses on word line and bit line varying with the sign of <strong>delta W</strong>. </p>
+<p><img src="/2020/05/17/20200517-paperResearch/C:%5CUsers%5CDell%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1589812063129.png" alt="1589812063129"><img src="/2020/05/17/20200517-paperResearch/C:%5CUsers%5CDell%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1589812077361.png" alt="1589812077361"></p>
+<p>The most important is  not the Fig above but the following paragraph. It gives detailed implementation of several key computations.  <strong>The  δ by W computation can be easily performed using the same crossbar array but with reverse direction of computation</strong>.</p>
+<p><img src="/2020/05/17/20200517-paperResearch/C:%5CUsers%5CDell%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1589812557563.png" alt="1589812557563"><img src="/2020/05/17/20200517-paperResearch/C:%5CUsers%5CDell%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1589812573580.png" alt="1589812573580"></p>
+<p><img src="/2020/05/17/20200517-paperResearch/C:%5CUsers%5CDell%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1589812659931.png" alt="1589812659931"></p>
+<p>[5] is earlier than [4] and it propose a more general training algorithm than <strong>Manhattan Rule</strong>. The amplitude of applied voltage pulses will varying with error rather than just the sign of error. As a result, the additional circuit overhead is bigger than [4]‘s.</p>
+<p><img src="/2020/05/17/20200517-paperResearch/C:%5CUsers%5CDell%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1589813221751.png" alt="1589813221751"></p>
+<p> In this time, I understand the hybrid training proposed by Peng Yao’s paper in <em>Nature</em> 2020 [6].</p>
+<p>[1] L. Song, X. Qian, H. Li and Y. Chen, “PipeLayer: A Pipelined ReRAM-Based Accelerator for Deep Learning,” 2017 IEEE International Symposium on High Performance Computer Architecture (HPCA), Austin, TX, 2017, pp. 541-552, doi: 10.1109/HPCA.2017.55.</p>
+<p>[2] Y. Liu, B. Gao, M. Zhao, H. Wu and H. Qian, “The Impact of Endurance Degradation in Analog RRAM for In-Situ Training,” 2019 IEEE 26th International Symposium on Physical and Failure Analysis of Integrated Circuits (IPFA), Hangzhou, China, 2019, pp. 1-3, doi: 10.1109/IPFA47161.2019.8984759.</p>
+<p>[3] E. Zamanidoost, M. Klachko, D. Strukov and I. Kataeva, “Low area overhead in-situ training approach for memristor-based classifier,” Proceedings of the 2015 IEEE/ACM International Symposium on Nanoscale Architectures (NANOARCH´15), Boston, MA, 2015, pp. 139-142, doi: 10.1109/NANOARCH.2015.7180601.</p>
+<p>[4] E. Zamanidoost, F. M. Bayat, D. Strukov and I. Kataeva, “Manhattan rule training for memristive crossbar circuit pattern classifiers,” 2015 IEEE 9th International Symposium on Intelligent Signal Processing (WISP) Proceedings, Siena, 2015, pp. 1-6, doi: 10.1109/WISP.2015.7139171.</p>
+<p>[5] I. Kataeva, F. Merrikh-Bayat, E. Zamanidoost and D. Strukov, “Efficient training algorithms for neural networks based on memristive crossbar circuits,” 2015 International Joint Conference on Neural Networks (IJCNN), Killarney, 2015, pp. 1-8, doi: 10.1109/IJCNN.2015.7280785.</p>
+<p>[6] Yao P, Wu H, Gao B, et al. Fully hardware-implemented memristor convolutional neural network[J]. Nature, 2020, 577(7792): 641-646.</p>
+
       
     </div>
     
@@ -545,7 +581,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">13.3k</span>
+    <span title="Site words total count">14.1k</span>
   
 </div>
 
